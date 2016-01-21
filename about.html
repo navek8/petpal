@@ -1,0 +1,156 @@
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>  
+  <link type="text/css" rel="stylesheet" media="all" href="css/bootstrap.min.css" /> 
+  <link type="text/css" rel="stylesheet" media="all" href="css/main.css" />   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>  
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 60,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>  
+</head>
+<body>
+
+ <ul class="topnav">
+    <li><a href="index.html"><img src="images/navbarlogo.png" height="50"></a></li>
+    <ul class="topnav right">
+      <li><a href="about.html">About</a></li>      
+      <li><a href="#login">Login</a></li>
+      <li><a href="#signup">Sign Up</a></li>
+    </ul>
+  </ul>
+  <div class="jumbotron" style="height: 720px;">
+    <div class="texteffects">
+    <h1>My pet...
+            <div class="type-wrap">
+            <div id="typed-strings">
+                <p>is my best friend.</p>
+                <p>is always there to greet me.</p>
+                <p>loves me unconditionally.</p>
+                <p>cheers me up on a bad day.</p>
+                <p>is the cutest thing ever!</p>
+                <p>is my snuggle buddy.</p>
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+      </div>
+</div>
+    <div class="bg-container">
+    </div>
+    <div class="floating-container">
+      <div class="floating-about">
+          PetPal's mission is to empower pets and people through technology, awareness, and social connection.
+      </div>
+    </div>
+      <div class="container">
+          <p>We know that your pet is one of the most important parts of your life and we want to celebrate that unique relationship to its fullest. From the research you do before adopting or owning your pet, to the first day you take them home with you, to the true companionship you build, through the happy and challenging (potty-training) times you've shared with your pet, PetPal wants to help you along with the journey.</p>
+          <p>By offering a platform for pet owners to connect with each other, we hope to provide not only informational resources but also a strong community for both pets and animal lovers to meet and come together. PetPal is a place for us to share personal pet stories, photos, product reviews, animal friendly trails and parks, and veterinarian health advice. It also can help us in the most trying situations-when our pets go missing-through the Amber Alert system and hardware.</p>
+          <p>We will launch our first product version in Q1 2016, initially focusing on Dog owners. As we grow, we will expand our PetPal community to Cats, Horses, and other animals. Please join us as we build our pet and animal enthusiast network around the world!</p>
+      </div>
+      <div class="container">       
+        <h2>The Founding class</h2>
+        <p>PetPal's Founding Class is comprised of Silicon Valley's Top Talent. With experience from companies such as Google, Samsung, PayPal, NASA, Yahoo, and Tesla Motors, the team collectively brings outstanding technical, design, and Business expertise to the PetPal product. The Founding Class shares in the forward-thinking vision for how PetPal can transform and shape the pet ownership space.</p>
+      </div>
+      <div class="rowpics">
+        <div class="biopic">
+          <img src="images/steven.png"/><br>
+          <center><h4>Steven Choi</h4>
+          <center><h5>Founder</h5>
+        </div>       
+        <div class="biopic">
+          <img src="images/kevan.png"/>
+          <center><h4>Kevan Mah</h4>
+          <center><h5>Head of Product</h5>
+        </div>
+      </div>
+      <div class="rowpics">
+        <div class="biopic">
+          <img src="images/james.png"/>
+          <center><h4>James Chong</h4>
+          <center><h5>Software Engineer</h5>
+        </div>
+        <div class="biopic">
+          <img src="images/kang.png"/>
+          <center><h4>John Kang</h4>
+          <center><h5>Software Engineer</h5>
+        </div>
+      </div>
+      <div class="rowpics">
+        <div class="biopic">
+          <img src="images/daeun.png"/>
+          <center><h4>Daeun Lee</h4>
+          <center><h5>UI/UX Designer</h5>
+        </div>
+        <div class="biopic">
+          <img src="images/hanna.png"/>
+          <center><h4>Hanna Lee</h4>
+          <center><h5>UI/UX Designer</h5>
+        </div>
+      </div>
+      <div class="rowpics">
+        <div class="biopic">
+          <img src="images/ant.png"/>
+          <center><h4>Anthony Lee</h4>
+          <center><h5>Mechanical Engineer</h5>
+        </div>
+        <div class="biopic">
+          <img src="images/wendy.png"/>
+          <center><h4>Wendy Chuah</h4>
+          <center><h5>Business Operations</h5>
+        </div>
+      </div>
+      <div class="container">
+        <h2>PetPal Advisor</h2>
+          <p>PetPal believes in the Pet's perspective. To help us correctly identify and define what that perspective is we have a dedicated Veterinarian to advise our team and help guide our company direction. Our commitment is truly to the pets themselves and our Veterinarian Advisor's role is to hold us accountable to that commitment, and to ensure our content and information is correct and current. </p>
+      </div>
+      <div class="rowpics">
+        <div class="biopic">
+          <img src="https://media.licdn.com/media/p/6/000/257/156/075feb0.jpg" width="300" height="300" alt=""/></div>
+          <center><h4>Dr. Varsha Ramoutar</h4>
+          <center><h5>Corporate Veterinary Medicine</h5>
+        </div>
+      <div class="container">
+        <p>Over 13 years of experience as a practicing veterinarian, in the areas of Research, Agriculture, Food and other large animals, Public Health, Education, Small animal and exotic practice, advance training in Medicine and Surgery on a variety of species and Board eligibility. My background involves over 7 years experience in training locally and internationally, residents, interns, graduate students, technical and non-technical staff. I have also provided assistance to sectors involving wild life, zoo, agricultural personnel and departments (including the USDA), poultry and game. My assistance ranged from regulatory medicine, clinical and research medicine and surgery, public health, animal welfare, animal control and production. My overall objective is to improve public health and production by developing areas of Veterinary medicine, Research, Production, and Human and Animal Welfare and well-being through the use of my experience in One Medicine, Research, Education, Biosecurity, Innovation and Networking. Ultimate goal involves using my experience to develop programs, products, research and knowledge to improve public health and production especially for less developed populations and their agricultural animals.</p>
+      </div>
+      <div class="container">
+        <h2>PetPal Alumni</h2>
+        <p>Our PetPal Alumni are key team members who have significantly contributed to PetPal. Due to alternative commitments, however, alumni could no longer continue their valuable work on the product. Their help and support will always be recognized and appreciated! </p>
+      </div>
+      <div class="rowpics">
+        <div class="biopic">
+          <img src="http://i.imgur.com/g8hwLVi.png"/>
+          <center><h4>Omid Ahourai</h4>
+          <center><h5>Software Engineer</h5>
+        </div>
+        <div class="biopic">
+          <img src="http://i.imgur.com/YTnWRBI.jpg"/>
+          <center><h4>Bertrand Tay</h4>
+          <center><h5>Software Engineer</h5>
+          </div>
+      </div>
+</body>
+</html>
