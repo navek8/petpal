@@ -2,8 +2,11 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>  
   <link type="text/css" rel="stylesheet" media="all" href="css/bootstrap.min.css" /> 
-  <link type="text/css" rel="stylesheet" media="all" href="css/main.css" />   
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link type="text/css" rel="stylesheet" media="all" href="css/colorbox.css" />   
+  <link type="text/css" rel="stylesheet" media="all" href="css/main.css" /> 
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>  
+    <script src="js/jquery-1.4.min.js" type="text/javascript"></script>
+    <script src="js/jquery.colorbox-min.js" type="text/javascript"></script>    
     <script src="js/typed.js" type="text/javascript"></script>  
     <script>
     $(function(){
@@ -32,13 +35,39 @@
     function foo(){ console.log("Callback"); }
 
     </script>  
+  <script >
+    __savedHeight = 0;
+
+    function resizeTheColorbox(height) {
+      if (height > 0) {
+        __savedHeight = new Number(height);
+        var newHeight = __savedHeight + 50; // addition is the submit button offset
+
+        $(".open-lightbox").colorbox.resize({
+          height : newHeight
+        });
+      }
+    }
+
+    $(function() {
+      $(".open-lightbox").colorbox({
+        "inline" : true,
+        "href": "#wufoo-form iframe",
+        "width": 500,
+        "innerHeight": $("#wufoo-form iframe").height()   // Only deals with initial load
+      });
+    });
+
+    $(document).bind('cbox_complete', function(){
+      resizeTheColorbox(__savedHeight);
+    });
+  </script>
 </head>
 <body>
 
  <ul class="topnav">
     <li><a href="index.html"><img src="images/navbarlogo.png" height="50"></a></li>
-    <ul class="topnav right">
-      <li><a href="about.html">About</a></li>      
+    <ul class="topnav right">     
       <li><a href="#login">Login</a></li>
       <li><a href="#signup">Sign Up</a></li>
     </ul>
@@ -58,7 +87,83 @@
             <span id="typed" style="white-space:pre;"></span>
         </div>
       </div>
+<br>
+  <div class="container">
+<div align="center">
+  <input class="email-signup" type="text" class="text" name="name" placeholder="&nbsp;&nbsp;&nbsp;Share your email and we'll keep you updated on our launch!" size=80>
+  <input class="email-signup"  type="submit" class="submit" name="submit" value="Bark!"> 
 </div>
+</div>
+
+</div>
+<div class="background-white">
+  <iframe width="560" height="315" style="display:block; margin:0 auto 30;" src="https://www.youtube.com/embed/ThiCMSG3xQ0?rel=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen ></iframe>
+    
+  <div class="container">
+    <div class="cardrow">
+      <div class="card">
+        <p>Build an awesome pet profile</p>
+        <img src="http://res.cloudinary.com/petpal/image/upload/q_70/v1/prod/landing/square1.jpg" height="300" width="300">
+      </div>
+      <div class="card">
+        <p>Build an awesome pet profile</p>
+        <img src="http://res.cloudinary.com/petpal/image/upload/q_70/v1/prod/landing/square1.jpg" height="300" width="300">
+      </div>
+      <div class="card">
+        <p>Build an awesome pet profile</p>
+        <img src="http://res.cloudinary.com/petpal/image/upload/q_70/v1/prod/landing/square1.jpg" height="300" width="300">
+      </div>    
+      <div class="card">
+        <p>Build an awesome pet profile</p>
+        <img src="http://res.cloudinary.com/petpal/image/upload/q_70/v1/prod/landing/square1.jpg" height="300" width="300">
+      </div>
+      <div class="card">
+        <p>Build an awesome pet profile</p>
+        <img src="http://res.cloudinary.com/petpal/image/upload/q_70/v1/prod/landing/square1.jpg" height="300" width="300">
+      </div>
+      <div class="card">
+        <p>Build an awesome pet profile</p>
+        <img src="http://res.cloudinary.com/petpal/image/upload/q_70/v1/prod/landing/square1.jpg" height="300" width="300">
+      </div>        
+    </div>
+  </div>
+</div>
+</div>
+<div class="background-petpal">
+  <div class="container">
+    <div class="footerphoto">
+    <img src="images/pet-pal-footer-photo.png">
+  </div>
+  </div>
+</div>
+<footer style="padding:10px;">
+        <ul class="list-inline" style="text-align:center;">
+          <li>&copy; 2016 PetPal</li>
+          <li><a href="policy.html">Policy</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#wufoo-form" class="button open-lightbox">Feedback</a></li>
+        </ul>
+</footer>
+</div>
+    <div id="wufoo-form">
+
+      <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+      <script type="text/javascript">
+        var qm212rd1k824g6 = new WufooForm();
+        qm212rd1k824g6.initialize({
+          'userName':'kevanmah', 
+          'formHash':'qm212rd1k824g6', 
+          'autoResize':true,
+          'resizeDone': resizeTheColorbox,
+          'ssl':true
+        });
+        qm212rd1k824g6.display();
+
+      </script>
+
+    </div>
+
 
 </body>
 </html>

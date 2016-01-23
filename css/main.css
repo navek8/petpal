@@ -11,7 +11,7 @@ h5 { font-size: 14px; font-weight: 300; font-color: #666; line-height:0.5;}
 /* End of PetPal Style Guide Basics */
 
 .jumbotron { 
-  background-image: url(../images/background2.jpg);
+  background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -22,7 +22,7 @@ h5 { font-size: 14px; font-weight: 300; font-color: #666; line-height:0.5;}
 }
 /*Typing effects */
 .texteffects{
-  margin-top:200px;
+  margin-top:160px;
   text-align: center;
   font-size: 34px; 
   font-weight: 700; 
@@ -111,49 +111,41 @@ ul.topnav ul.right {
   right: 0;
 }
 
-
-/* floating box with our mission statement in it */
-.floating-container {
-  max-width: 1024px;
-  margin-right: auto;
-  margin-left: auto;
-  position:absolute;
-  left: 0;
-  right: 0;
-  top:720px;
-}
-.floating-about { 
-  background: #666;
-  width:480px;
-  color:#FFFFFF;
-  font-size:24px;
-  font-weight:400;
-  font-style:italic;
-  line-height:1.5;
-  font-family: 'Open Sans', sans-serif;
-  margin:auto;
-  padding-left:30px;
-  padding-right:30px;
-  padding-top:20px;
-  padding-bottom:20px;
-}
-
 /*basic container elements */
 .container {
   max-width: 1024px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;  
   padding-left: 10px;
   padding-right: 10px;
 }
 
-
-/*formatting for the bio pictures*/
-.biopic {
-    display: inline-block;
-    margin-left: 60px;
-    margin-right: 60px;
+.email-signup{
+opacity:0.9;
+line-height: 2.5;
 }
-.rowpics {
+/*formatting for the bio pictures*/
+.card {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cardrow {
   text-align:center;
+  margin-top: 20px;
+  margin-bottom: 20px;  
+}
+.background-petpal { background: #00ACC1;margin: 10 0 10 0;}
+.background-white { background: #FFFFFF;margin: 10 0 10 0;}
+.footerphoto{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;   
+}
+#wufoo-form {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
