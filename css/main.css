@@ -140,12 +140,19 @@ line-height: 2.5;
 .background-petpal { background: #00ACC1;margin: 10 0 10 0;}
 .background-white { background: #FFFFFF;margin: 10 0 10 0;}
 .footerphoto{
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;   
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-size: contain;
+  background-image: url(../images/pet-pal-footer-photo.png); 
+  height: 500px;  
+  margin-top:20px;
+  margin-bottom:20px;
 }
 #wufoo-form {
   position: absolute;
   top: -9999px;
   left: -9999px;
+}
+.email-signup-response {
+  color:#FFFFFF;
 }
