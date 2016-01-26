@@ -157,3 +157,57 @@ line-height: 2.5;
 .email-signup-response {
   color:#FFFFFF;
 }
+
+.petpal-fb-full {
+  background-image: url(../images/icons/fb-outline.png);
+  background-size: 120px 120px;
+  width: 120px;
+  height: 120px;
+  display:inline-block;
+}
+.petpal-fb-full:hover {
+  background-image: url(../images/icons/fb-full.png);
+}
+
+
+.petpal-tw-full {
+  background-image: url(../images/icons/tw-outline.png);
+  background-size: 120px 120px;
+  width: 120px;
+  height: 120px;
+  display:inline-block;
+}
+.petpal-tw-full:hover {
+  background-image: url(../images/icons/tw-full.png);
+}
+
+
+.petpal-gp-full {
+  background-image: url(../images/icons/gp-outline.png);
+  background-size: 120px 120px;
+  width: 120px;
+  height: 120px;
+  display:inline-block;
+}
+.petpal-gp-full:hover {
+  background-image: url(../images/icons/gp-full.png);
+}
+
+
+.petpal-pn-full {
+  background-image: url(../images/icons/pn-outline.png);
+  background-size: 120px 120px;
+  width: 120px;
+  height: 120px;
+  display:inline-block;
+}
+.petpal-pn-full:hover {
+  background-image: url(../images/icons/pn-full.png);
+}
+
+#petpal-tw-full
+#petpal-tw-outline
+#petpal-gp-full
+#petpal-gp-outline
+#petpal-pn-full
+#petpal-pn-outline
