@@ -10,6 +10,53 @@ h4 { font-size: 18px; font-weight: 700; letter-spacing: 0.75px; text-transform:u
 h5 { font-size: 14px; font-weight: 300; font-color: #666; line-height:0.5;}
 /* End of PetPal Style Guide Basics */
 
+@media screen and (max-device-width: 800px) {
+    .topcontainer  {
+        background-image: url(../images/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .topcontainer video {
+        display: none;
+    }
+}
+
+.topcontainer {
+  height:540px;
+  max-height: 540px; 
+  overflow:hidden;
+}
+#bg_pattern { 
+background-image: url(../images/bg-pattern.png); 
+position: fixed; 
+left: 0px; 
+top: 0px; 
+width: 100%; 
+height: 100%; 
+z-index: -1;
+}
+.topcontainer video { 
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000000000;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../images/background.jpg) no-repeat;
+    background-size: cover; 
+    overflow:hidden;
+}
+
 .jumbotron { 
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
@@ -22,12 +69,16 @@ h5 { font-size: 14px; font-weight: 300; font-color: #666; line-height:0.5;}
 }
 /*Typing effects */
 .texteffects{
-  margin-top:160px;
+  margin-top:140px;
   text-align: center;
-  font-size: 34px; 
+
+}
+.texteffects h1{  
+  font-size: 54px; 
   font-weight: 700; 
-  color: #FFFFFF; 
-  line-height:1.5;
+  color: #FFF; 
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .typed-cursor{
@@ -115,11 +166,7 @@ ul.topnav ul.right {
 .container {
   max-width: 1024px;
   margin-right: auto;
-  margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;  
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: auto; 
 }
 
 .email-signup{
@@ -134,12 +181,10 @@ line-height: 2.5;
     margin-bottom: 10px;
 }
 .cardrow {
-  text-align:center;
-  margin-top: 20px;
-  margin-bottom: 20px;  
+  text-align:center; 
 }
-.background-petpal { background: #00ACC1;margin: 10 0 10 0;}
-.background-white { background: #FFFFFF;margin: 10 0 10 0;}
+.background-petpal { background: #00ACC1;margin: 0 0 0 0;}
+.background-white { background: #FFFFFF;margin: 0 0 0 0;}
 .footerphoto{
   background-position: center center;
   background-repeat: no-repeat; 

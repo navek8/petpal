@@ -72,45 +72,40 @@
 
     </ul>
   </ul>
-
-
-
-<div class="topcontainer"><div id="bg_pattern"></div>
-    <video autoplay loop muted poster="images/background.jpg">
-        <source src="video/trickdog-splash.mp4" type="video/mp4">
-    </video>
-      <div class="texteffects">
-        <h1>My pet...
-          <div class="type-wrap">
+  <div class="jumbotron" style="height: 720px;">
+    <div class="texteffects">
+    <h1>My pet...
+            <div class="type-wrap">
             <div id="typed-strings">
-              <p>is my best friend.</p>
-              <p>is always there to greet me.</p>
-              <p>loves me unconditionally.</p>
-              <p>cheers me up on a bad day.</p>
-              <p>is the cutest thing ever!</p>
-              <p>is my snuggle buddy.</p>
+                <p>is my best friend.</p>
+                <p>is always there to greet me.</p>
+                <p>loves me unconditionally.</p>
+                <p>cheers me up on a bad day.</p>
+                <p>is the cutest thing ever!</p>
+                <p>is my snuggle buddy.</p>
             </div>
-          <span id="typed" style="white-space:pre;"></span>
-          </div>
-      </div>
-        <br>
-      <div class="container">
-          <div align="center">
-              <form id="mc-form">  
-            <input class="email-signup" id="mce-EMAIL" type="email" class="text" name="name" placeholder="&nbsp;&nbsp;&nbsp;Share your email and we'll keep you updated on our launch!" size=80>
-            <button class="email-signup"  type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Bark!</button>
-           <label class="email-signup-response" for="mce-EMAIL"></label>  
-              </form>
-            <script>
-              $('#mc-form').ajaxChimp({
-                  url: 'http://getpetpal.us12.list-manage.com/subscribe/post?u=a654a5488b803dcc4e64ad221&id=56dadb4168'
-              });
-          </script>
-          </div>
+            <span id="typed" style="white-space:pre;"></span>
         </div>
+      </div>
+<br>
+  <div class="container">
+<div align="center">
+    <form id="mc-form">  
+  <input class="email-signup" id="mce-EMAIL" type="email" class="text" name="name" placeholder="&nbsp;&nbsp;&nbsp;Share your email and we'll keep you updated on our launch!" size=80>
+  <button class="email-signup"  type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Bark!</button>
+ <label class="email-signup-response" for="mce-EMAIL"></label>  
+    </form>
+  <script>
+    $('#mc-form').ajaxChimp({
+        url: 'http://getpetpal.us12.list-manage.com/subscribe/post?u=a654a5488b803dcc4e64ad221&id=56dadb4168'
+    });
+</script>
+</div>
+</div>
+
+
 </div>
 <div class="background-white">
-  <br><br>
   <iframe width="560" height="315" style="display:block; margin:0 auto 30;" src="https://www.youtube.com/embed/ThiCMSG3xQ0?rel=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen ></iframe>
     
 <div class="container"><div align="center">
@@ -156,7 +151,6 @@
   </div>
   </div>
 </div>
-<div class="background-white">
 <div class="cardrow">
   <div align="center">
         <a class="petpal-fb-full" href="http://facebook.com/getpetpal" target="_blank"></a>
@@ -173,7 +167,6 @@
           <li><a href="#wufoo-form" class="button open-lightbox">Feedback</a></li>
         </ul>
 </footer>
-</div>
 </div>
     <div id="wufoo-form">
 
