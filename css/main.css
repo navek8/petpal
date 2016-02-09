@@ -12,7 +12,7 @@ h5 { font-size: 14px; font-weight: 300; font-color: #666; line-height:0.5;}
 
 @media screen and (max-device-width: 800px) {
     .topcontainer  {
-        background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/video-bg-screen.png);
+        background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454990809/prod/images/video-bg-screen.png);
         background-repeat: no-repeat;
         background-position: center center;
         -webkit-background-size: cover;
@@ -52,13 +52,13 @@ z-index: -1;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/video-bg-screen.png) no-repeat;
+    background: url(http://res.cloudinary.com/getpetpal/image/upload/v1454990809/prod/images/video-bg-screen.png) no-repeat;
     background-size: cover; 
     overflow:hidden;
 }
 
 .jumbotron { 
-  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/video-bg-screen.png);
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454990809/prod/images/video-bg-screen.png);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
