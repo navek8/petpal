@@ -1,0 +1,61 @@
+.jumbotron { 
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/about/background2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+/* box to space the top paragraph */
+.bg-container { 
+  max-width:1024px;
+  height:70px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+}
+
+
+/* floating box with our mission statement in it */
+.floating-container {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+  position:absolute;
+  left: 0;
+  right: 0;
+  top:700px;
+}
+.floating-about { 
+  background: #666;
+  width:480px;
+  color:#FFFFFF;
+  font-size:24px;
+  font-weight:400;
+  font-style:italic;
+  line-height:1.5;
+  font-family: 'Open Sans', sans-serif;
+  margin:auto;
+  padding-left:30px;
+  padding-right:30px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+/*formatting for the bio pictures*/
+.biopic {
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.rowpics {
+  text-align:center;
+}
+.email-signup{
+  text-align: center;
+    margin-right: auto;
+  margin-left: auto;
+}

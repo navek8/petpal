@@ -1,0 +1,258 @@
+
+/* Basics per the PetPal Style Guidelines */
+body{
+  font-size: 16px; font-weight:400; line-height: 1.5; color: #666; font-family: 'Open Sans', sans-serif !important;  
+}
+h1 { font-size: 34px; font-weight: 700; color: #666; line-height:1.5;}
+h2 { font-size: 18px; font-weight: 700; letter-spacing: 0.75px; text-transform:uppercase; font-color: #666; line-height:1.5;}
+h3 { font-size: 18px; font-weight: 700; letter-spacing: 0.75px; text-transform:uppercase; font-color: #666; line-height:1.5;}
+h4 { font-size: 18px; font-weight: 700; letter-spacing: 0.75px; text-transform:uppercase; font-color: #666; line-height:0.5;}
+h5 { font-size: 14px; font-weight: 300; font-color: #666; line-height:0.5;}
+/* End of PetPal Style Guide Basics */
+
+@media screen and (max-device-width: 800px) {
+    .topcontainer  {
+        background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454990809/prod/images/video-bg-screen.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .topcontainer video {
+        display: none;
+    }
+}
+
+.topcontainer {
+  height:540px;
+  max-height: 540px; 
+  overflow:hidden;
+}
+#bg_pattern { 
+background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/bg-pattern.png); 
+position: fixed; 
+left: 0px; 
+top: 0px; 
+width: 100%; 
+height: 100%; 
+z-index: -1;
+}
+.topcontainer video { 
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000000000;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(http://res.cloudinary.com/getpetpal/image/upload/v1454990809/prod/images/video-bg-screen.png) no-repeat;
+    background-size: cover; 
+    overflow:hidden;
+}
+
+.jumbotron { 
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454990809/prod/images/video-bg-screen.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+/*Typing effects */
+.texteffects{
+  margin-top:140px;
+  text-align: center;
+
+}
+.texteffects h1{  
+  font-size: 54px; 
+  font-weight: 700; 
+  color: #FFF; 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* navbar */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00ACC1;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 15px;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height:3.15;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #666;}
+
+ul.topnav li a.active {background-color: #666;}
+
+ul.topnav ul.right {
+    float: right;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav ul.right, 
+    ul.topnav li {float: none;}
+}
+
+/* box to space the top paragraph */
+.bg-container { 
+  max-width:1024px;
+  height:70px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+}
+
+/*basic container elements */
+.container {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto; 
+}
+
+.email-signup{
+opacity:0.9;
+line-height: 2.5;
+}
+/*formatting for the bio pictures*/
+.card {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.cardrow {
+  text-align:center; 
+}
+.background-petpal { background: #00ACC1;margin: 0 0 0 0;}
+.background-white { background: #FFFFFF;margin: 0 0 0 0;}
+.footerphoto{
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-size: contain;
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/pet-pal-footer-photo.png); 
+  height: 500px;  
+  margin-top:20px;
+  margin-bottom:20px;
+}
+#wufoo-form {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.email-signup-response {
+  color:#FFFFFF;
+}
+
+.petpal-fb-full {
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/icons/fb-outline.png);
+  background-size: 120px 120px;
+  width: 120px;
+  height: 120px;
+  display:inline-block;
+}
+.petpal-fb-full:hover {
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/icons/fb-full.png);
+}
+
+
+.petpal-tw-full {
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/icons/tw-outline.png);
+  background-size: 120px 120px;
+  width: 120px;
+  height: 120px;
+  display:inline-block;
+}
+.petpal-tw-full:hover {
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/icons/tw-full.png);
+}
+
+
+.petpal-gp-full {
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/icons/gp-outline.png);
+  background-size: 120px 120px;
+  width: 120px;
+  height: 120px;
+  display:inline-block;
+}
+.petpal-gp-full:hover {
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/icons/gp-full.png);
+}
+
+
+.petpal-pn-full {
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/icons/pn-outline.png);
+  background-size: 120px 120px;
+  width: 120px;
+  height: 120px;
+  display:inline-block;
+}
+.petpal-pn-full:hover {
+  background-image: url(http://res.cloudinary.com/getpetpal/image/upload/v1454982833/prod/images/icons/pn-full.png);
+}
+
+#petpal-tw-full
+#petpal-tw-outline
+#petpal-gp-full
+#petpal-gp-outline
+#petpal-pn-full
+#petpal-pn-outline
